@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f7fc;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.form-section {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #2563eb;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.ticket-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-5px);
+}
+
+.ticket-card h3 {
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.ticket-card p {
+  margin-bottom: 8px;
+  color: #475569;
+}
+
+.priority-high {
+  color: red;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.priority-low {
+  color: green;
+  font-weight: bold;
+}
+
+.status-open {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.status-progress {
+  color: #ca8a04;
+  font-weight: bold;
+}
+
+.status-resolved {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.ticket-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.update-btn {
+  background: #16a34a;
+}
+
+.update-btn:hover {
+  background: #15803d;
+}
+
+hr {
+  margin: 25px 0;
+  border: none;
+  height: 1px;
+  background: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .ticket-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
